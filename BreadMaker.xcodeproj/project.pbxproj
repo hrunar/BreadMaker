@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		ACFFCC951C1F055400BAC700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFCC941C1F055400BAC700 /* AppDelegate.swift */; };
 		ACFFCC971C1F055400BAC700 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFCC961C1F055400BAC700 /* ViewController.swift */; };
-		ACFFCC9A1C1F055400BAC700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFFCC981C1F055400BAC700 /* Main.storyboard */; };
 		ACFFCC9C1C1F055400BAC700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFFCC9B1C1F055400BAC700 /* Assets.xcassets */; };
 		ACFFCC9F1C1F055400BAC700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFFCC9D1C1F055400BAC700 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		ACFFCC911C1F055400BAC700 /* BreadMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreadMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFFCC941C1F055400BAC700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACFFCC961C1F055400BAC700 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ACFFCC991C1F055400BAC700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACFFCC9B1C1F055400BAC700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACFFCC9E1C1F055400BAC700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACFFCCA01C1F055400BAC700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 			children = (
 				ACFFCC941C1F055400BAC700 /* AppDelegate.swift */,
 				ACFFCC961C1F055400BAC700 /* ViewController.swift */,
-				ACFFCC981C1F055400BAC700 /* Main.storyboard */,
 				ACFFCC9B1C1F055400BAC700 /* Assets.xcassets */,
 				ACFFCC9D1C1F055400BAC700 /* LaunchScreen.storyboard */,
 				ACFFCCA01C1F055400BAC700 /* Info.plist */,
@@ -124,7 +121,6 @@
 			files = (
 				ACFFCC9F1C1F055400BAC700 /* LaunchScreen.storyboard in Resources */,
 				ACFFCC9C1C1F055400BAC700 /* Assets.xcassets in Resources */,
-				ACFFCC9A1C1F055400BAC700 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,14 +139,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ACFFCC981C1F055400BAC700 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACFFCC991C1F055400BAC700 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ACFFCC9D1C1F055400BAC700 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -253,6 +241,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.finn.BreadMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -264,6 +253,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.finn.BreadMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
