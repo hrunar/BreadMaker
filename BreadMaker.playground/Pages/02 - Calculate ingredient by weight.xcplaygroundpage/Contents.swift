@@ -14,5 +14,6 @@ struct Dough {
 let dough = Dough(yield: 1700)
 
 //: How to calculate ingredient weights?
+dough.flour
 
 //: [Next](@next)
