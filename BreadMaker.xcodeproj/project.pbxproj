@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07554B9D4AE2D46570A16852 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A539A1B420664DFCFBDB5A1 /* Pods.framework */; };
 		ACFFCC951C1F055400BAC700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFCC941C1F055400BAC700 /* AppDelegate.swift */; };
 		ACFFCC971C1F055400BAC700 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFCC961C1F055400BAC700 /* ViewController.swift */; };
 		ACFFCC9C1C1F055400BAC700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFFCC9B1C1F055400BAC700 /* Assets.xcassets */; };
@@ -14,12 +15,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A539A1B420664DFCFBDB5A1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		775EEB5F92A408CF410C0267 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		86CA8040D4B5A46BA214AA03 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		ACFFCC911C1F055400BAC700 /* BreadMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreadMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFFCC941C1F055400BAC700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACFFCC961C1F055400BAC700 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACFFCC9B1C1F055400BAC700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACFFCC9E1C1F055400BAC700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACFFCCA01C1F055400BAC700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACFFCCDD1C20312300BAC700 /* BreadMaker.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BreadMaker.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +32,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07554B9D4AE2D46570A16852 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3111D4F7A4E2E4854140A183 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				775EEB5F92A408CF410C0267 /* Pods.debug.xcconfig */,
+				86CA8040D4B5A46BA214AA03 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B33061E53BC56FF65184CA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A539A1B420664DFCFBDB5A1 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ACFFCC881C1F055400BAC700 = {
 			isa = PBXGroup;
 			children = (
+				ACFFCCDD1C20312300BAC700 /* BreadMaker.playground */,
 				ACFFCC931C1F055400BAC700 /* BreadMaker */,
 				ACFFCC921C1F055400BAC700 /* Products */,
+				3111D4F7A4E2E4854140A183 /* Pods */,
+				7B33061E53BC56FF65184CA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +94,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACFFCCA31C1F055400BAC700 /* Build configuration list for PBXNativeTarget "BreadMaker" */;
 			buildPhases = (
+				18D754993B0F15349A1EDBD7 /* Check Pods Manifest.lock */,
 				ACFFCC8D1C1F055400BAC700 /* Sources */,
 				ACFFCC8E1C1F055400BAC700 /* Frameworks */,
 				ACFFCC8F1C1F055400BAC700 /* Resources */,
+				637F926EEADB8A1BA50F7A4E /* Embed Pods Frameworks */,
+				D579504F6540DE33F9A75188 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +154,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18D754993B0F15349A1EDBD7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		637F926EEADB8A1BA50F7A4E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D579504F6540DE33F9A75188 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACFFCC8D1C1F055400BAC700 /* Sources */ = {
@@ -235,6 +312,7 @@
 		};
 		ACFFCCA41C1F055400BAC700 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 775EEB5F92A408CF410C0267 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BreadMaker/Info.plist;
@@ -247,6 +325,7 @@
 		};
 		ACFFCCA51C1F055400BAC700 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86CA8040D4B5A46BA214AA03 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BreadMaker/Info.plist;
@@ -276,6 +355,7 @@
 				ACFFCCA51C1F055400BAC700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

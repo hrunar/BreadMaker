@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "37957F45BC72FE6F7D3BCB09EFB25A7876BF56A1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "149D592AF9D615796F8EE81127B0843B967E8E75" : 0,
+    "37957F45BC72FE6F7D3BCB09EFB25A7876BF56A1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "52D83440-DBA8-4D92-9C0D-BCD7D15D800D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "149D592AF9D615796F8EE81127B0843B967E8E75" : "BreadMaker\/BreadMaker.playground\/Resources\/Interstellar\/",
+    "37957F45BC72FE6F7D3BCB09EFB25A7876BF56A1" : "BreadMaker\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BreadMaker",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BreadMaker.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JensRavens\/Interstellar.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "149D592AF9D615796F8EE81127B0843B967E8E75"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:runr\/BreadMaker.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "37957F45BC72FE6F7D3BCB09EFB25A7876BF56A1"
+    }
+  ]
+}
