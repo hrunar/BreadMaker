@@ -1,5 +1,7 @@
 //: [Previous](@previous)
 
+//: ## Dough
+
 struct Dough {
     
     let yield: Double
@@ -13,7 +15,9 @@ struct Dough {
 
 let dough = Dough(yield: 1700)
 
-//: How to calculate ingredient weights?
-dough.flour
+/*: 
+    A dough of 1700 grams gives us two loaves of 850g each.
+    But, how to calculate ingredient weights? 
+*/
 
 //: [Next](@next)

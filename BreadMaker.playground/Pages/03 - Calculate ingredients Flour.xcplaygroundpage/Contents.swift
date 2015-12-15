@@ -22,13 +22,12 @@ struct Dough {
     init(yield: Double, hydrationPercentage hydration: Double = 70.0) {
         self.yield = yield
         self.hydration = hydration
-        // self.flour = 1000.0
+        self.flour = 1000.0
     }
 }
 
 let dough = Dough(yield: 1700)
 dough.yield
 dough.flour
-dough.water
 
 //: [Next](@next)

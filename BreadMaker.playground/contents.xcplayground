@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='raw'>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
     <pages>
         <page name='01 - Bread basics'/>
         <page name='02 - Calculate ingredient by weight'/>
         <page name='03 - Calculate ingredients Flour'/>
         <page name='04 - Calculate ingredients Water'/>
         <page name='05 - Calculate ingredients Yeast'/>
+        <page name='06 - Calculate ingredients Salt'/>
     </pages>
 </playground>

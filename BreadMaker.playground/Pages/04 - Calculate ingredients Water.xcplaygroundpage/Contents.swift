@@ -13,6 +13,8 @@ struct Dough {
         }
     }
     
+/*: Todo: Implement water */
+    
     init(yield: Double, hydrationPercentage hydration: Double = 70.0) {
         self.yield = yield
         self.hydration = hydration
