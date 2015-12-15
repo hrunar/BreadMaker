@@ -15,14 +15,13 @@ let bakersPercentages: [String : Double] =
 
 struct Dough {
 
-    let yield: Double
-    let hydration: Double
+    let yield: Int // grams
+    let hydration: Double // percentage
     
-    init(yield: Double, hydrationPercentage hydration: Double = 70.0) {
+    init(yield: Int, hydrationPercentage hydration: Double = 70.0) {
         self.yield = yield
         self.hydration = hydration
     }
-    
 }
 
 //: Create an instance of dough with default hydration

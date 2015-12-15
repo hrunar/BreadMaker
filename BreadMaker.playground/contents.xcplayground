@@ -3,5 +3,6 @@
     <pages>
         <page name='01 - Bread basics'/>
         <page name='02 - Calculate ingredient by weight'/>
+        <page name='03 - Calculate ingredients 2'/>
     </pages>
 </playground>
