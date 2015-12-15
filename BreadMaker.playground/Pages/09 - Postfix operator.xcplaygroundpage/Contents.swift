@@ -1,6 +1,6 @@
 //: [Previous](@previous)
 
-//: ## The postfix operator
+//: ### The postfix operator
 
 postfix operator % {}
 postfix func % (value: Double) -> Double {

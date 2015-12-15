@@ -1,6 +1,6 @@
 //: [Previous](@previous)
 
-//: ## Yeast
+//: ### Yeast
 
 struct Dough {
     

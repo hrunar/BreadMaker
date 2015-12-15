@@ -1,6 +1,6 @@
 //: [Previous](@previous)
 
-//: ## Ingredients calculated! What if...?
+//: ### Ingredients calculated! What if...?
 struct Dough {
     
     let yield: Double

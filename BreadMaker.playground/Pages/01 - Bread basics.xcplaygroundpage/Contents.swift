@@ -1,8 +1,8 @@
-//: Bread basics
+//: ## Bread basics
 
 let ingredients = ["Flour", "Water", "Yeast", "Salt"]
 
-//: Baker's percentage
+//: ### Baker's percentage
 
 let bakersPercentages: [String : Double] =
     [  "Flour": 100.0,
