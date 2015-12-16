@@ -2,17 +2,19 @@
 
 /*:
 ## Process
-* Autolyse (flour + water)
+* Mix (flour + water)
+* Autolyse - 30 min rest
 * Develop (add yeast + salt)
 * Bulk fermentation
-    * Stretch-and-fold 1
-    * Stretch-and-fold 2
-    * Stretch-and-fold 3
-* Divide, pre-shape
+    * Stretch-and-fold - 20 min rest
+    * Stretch-and-fold - 20 min rest
+    * Stretch-and-fold - 20 min rest
+    * Ferment
+* Divide, pre-shape - 30 min rest
 * Final shape
-* Proof
-* Bake
-* Cool
+* Proof - 1 hour +
+* Bake - 20 min @ 250° + 40 min @ 200°
+* Cool - 2 hours +
  
 */
 

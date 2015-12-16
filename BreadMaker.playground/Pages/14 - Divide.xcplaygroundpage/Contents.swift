@@ -21,6 +21,7 @@ struct Dough {
     }
 }
 
+//: A loaf of bread. No mutating functions as yet, let's see if we can keep it that way
 struct Loaf {
     let weight: Double
     
@@ -36,7 +37,8 @@ enum BakeError: ErrorType {
 }
 
 struct BreadMaker {
-    
+
+//: The signature changes to return an array of loaves
     func makeBread(completion: Result<[Loaf]> -> Void) -> Void {
         print("Making bread")
         let dough = Dough(yield: 1700)
@@ -53,21 +55,21 @@ struct BreadMaker {
     private func mix(var dough: Dough) -> Result<Dough> {
         print("Mix")
         dough.mix()
-        return .Success(dough)
+        return dough.mixed ? .Success(dough) : .Error(BakeError.MixingError)
     }
     
     private func autolyse(var dough: Dough) -> Result<Dough> {
         print("Autolyse")
         dough.autolyse()
-        return .Success(dough)
+        return dough.autolyseCompleted ? .Success(dough) : .Error(BakeError.AutolyseError)
     }
     
     private func divide(dough: Dough) -> Result<[Loaf]> {
         print("Divide")
         let loaves = [Loaf(weight: dough.yield / 2), Loaf(weight: dough.yield / 2)]
+//: This cannot possibly go wrong
         return .Success(loaves)
     }
-    
 }
 
 BreadMaker().makeBread { result in

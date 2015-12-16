@@ -26,6 +26,8 @@ struct BreadMaker {
     func makeBread(completion: Result<Dough> -> Void) -> Void {
         print("Making bread")
         let dough = Dough(yield: 1700)
+
+/*: Making bread is a chain of (asynchronous) calls which may fail. Using a Signal lets us create this chain */
         Signal(dough)
             .flatMap(mix)
             .subscribe { result in
@@ -37,7 +39,6 @@ struct BreadMaker {
     private func mix(var dough: Dough) -> Result<Dough> {
         print("Mix")
         dough.mix()
-//: If this returns an error, the chain is broken and error printed
         return dough.mixed ? .Success(dough) : .Error(BakeError.MixingError)
     }
     

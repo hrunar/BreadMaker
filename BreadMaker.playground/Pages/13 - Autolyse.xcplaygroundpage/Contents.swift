@@ -31,6 +31,9 @@ struct BreadMaker {
     func makeBread(completion: Result<Dough> -> Void) -> Void {
         print("Making bread")
         let dough = Dough(yield: 1700)
+        
+//: Then we add the rest of the steps 
+        
         Signal(dough)
             .flatMap(mix)
             .flatMap(autolyse)
@@ -43,13 +46,13 @@ struct BreadMaker {
     private func mix(var dough: Dough) -> Result<Dough> {
         print("Mix")
         dough.mix()
-        return .Success(dough)
+        return dough.mixed ? .Success(dough) : .Error(BakeError.MixingError)
     }
     
     private func autolyse(var dough: Dough) -> Result<Dough> {
         print("Autolyse")
         dough.autolyse()
-        return .Success(dough)
+        return dough.autolyseCompleted ? .Success(dough) : .Error(BakeError.AutolyseError)
     }
     
 }
