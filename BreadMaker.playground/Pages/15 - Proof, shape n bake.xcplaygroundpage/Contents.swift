@@ -121,7 +121,7 @@ struct BreadMaker {
     }
     
     private func bake(loaves: [Loaf]) -> Result<[Loaf]> {
-        print("Bake!")
+        print("Bake")
         let bakedLoaves = loaves.map({$0.bakedLoaf()})
         let success = bakedLoaves.reduce(true, combine: {$0 && $1.baked})
         return success ? .Success(bakedLoaves) : .Error(BakeError.BakeError)
