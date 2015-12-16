@@ -23,6 +23,7 @@ struct Dough {
 
 enum BakeError: ErrorType {
     case MixingError
+    case AutolyseError
 }
 
 struct BreadMaker {
@@ -32,6 +33,7 @@ struct BreadMaker {
         let dough = Dough(yield: 1700)
         Signal(dough)
             .flatMap(mix)
+            .flatMap(autolyse)
             .subscribe { result in
                 completion(result)
         }
@@ -40,10 +42,13 @@ struct BreadMaker {
     
     private func mix(var dough: Dough) -> Result<Dough> {
         print("Mix")
-//: If this returns an error, the chain is broken and error printed
-        //return .Error(BakeError.MixingError)
-//: Otherwise, return success
         dough.mix()
+        return .Success(dough)
+    }
+    
+    private func autolyse(var dough: Dough) -> Result<Dough> {
+        print("Autolyse")
+        dough.autolyse()
         return .Success(dough)
     }
     
