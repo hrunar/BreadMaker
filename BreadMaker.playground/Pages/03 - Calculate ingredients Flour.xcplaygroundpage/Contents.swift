@@ -13,15 +13,14 @@ struct Dough {
     Yield = flour + (flour * hydration / 100)
 */
     var flour: Double {
-        get {
-            return 100 * yield / (100 + hydration)
-        }
+        return 100 * yield / (100 + hydration)
     }
     
     
     init(yield: Double, hydrationPercentage hydration: Double = 70.0) {
         self.yield = yield
         self.hydration = hydration
+//: flour is a read-only variable, trying to set it produces an error
         self.flour = 1000.0
     }
 }

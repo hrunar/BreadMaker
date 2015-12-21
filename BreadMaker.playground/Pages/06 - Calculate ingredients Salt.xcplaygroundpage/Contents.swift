@@ -8,21 +8,15 @@ struct Dough {
     let hydration: Double
     
     var flour: Double {
-        get {
-            return 100 * yield / (100 + hydration)
-        }
+        return 100 * yield / (100 + hydration)
     }
     
     var water: Double {
-        get {
-            return yield - flour
-        }
+        return yield - flour
     }
     
     var yeast: Double {
-        get {
-            return flour * 4 / 100
-        }
+        return flour * 4 / 100
     }
     
     // TODO: Implement salt (1.9%)
