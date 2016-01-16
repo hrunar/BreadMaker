@@ -15,7 +15,7 @@ struct Dough {
         return yield - flour
     }
     
-    //: Todo: Implement yeast (4%)
+    //: Todo: Implement yeast (1%)
     
     init(yield: Double, hydrationPercentage hydration: Double = 70.0) {
         self.yield = yield

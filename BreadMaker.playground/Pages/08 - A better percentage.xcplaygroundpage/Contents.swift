@@ -15,7 +15,7 @@ struct Dough {
     }
     
     var yeast: Double {
-        return flour * 4%
+        return flour * 1%
     }
     
     var salt: Double {

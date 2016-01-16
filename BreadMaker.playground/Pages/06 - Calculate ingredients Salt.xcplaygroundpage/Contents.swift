@@ -16,7 +16,7 @@ struct Dough {
     }
     
     var yeast: Double {
-        return flour * 4 / 100
+        return flour * 1 / 100
     }
     
     // TODO: Implement salt (1.9%)
